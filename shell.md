@@ -121,3 +121,31 @@ case $1 in
         close  
         ;;  
 esac  
+
+
+# shell 循环
+do-while  
+
+#!/bin/bash  
+while [ "$value" != "close" ]  
+do  
+    read -p "please input string:" value  
+done  
+echo "stop while!!"  
+
+for循环  
+
+#!/bin/bash   
+for name in py py1 py2 py3  
+do  
+    echo "your name:$name"
+done  
+
+#!/bin/bash  
+read -p "please input count:" count
+total=0  
+for((i=0; i<=count; i=i+1))  
+do  
+    total=$(($total+$i))  
+done  
+echo "1+2+.........+$count=$total"
